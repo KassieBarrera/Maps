@@ -80,7 +80,6 @@ class MapsGPS : Fragment(), OnMapReadyCallback, LocationListener {
 
     override fun onMapReady(googleMap: GoogleMap?) {
         gMap = googleMap
-
         gestorLocation = context!!.getSystemService(Context.LOCATION_SERVICE) as LocationManager
 
         if (context?.let {
@@ -125,6 +124,4 @@ class MapsGPS : Fragment(), OnMapReadyCallback, LocationListener {
     override fun onProviderDisabled(provider: String?) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
-
-
 }
